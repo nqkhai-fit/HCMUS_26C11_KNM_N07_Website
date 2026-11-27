@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nhóm 7 — Giới thiệu nhóm</title>
+  <meta name="description" content="Trang giới thiệu Nhóm 7: hành trình, sản phẩm, thành viên và tài liệu.">
+  <meta name="theme-color" content="#1b2556">
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,900;1,500;1,700&amp;family=Oswald:wght@500;600&amp;family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&amp;display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Bật hiệu ứng chỉ khi người xem KHÔNG chọn "giảm chuyển động". Nếu JS lỗi, sau 2.5s mọi thứ vẫn hiện ra. -->
+  <script>(function(r){if(!matchMedia("(prefers-reduced-motion: reduce)").matches){r.classList.add("motion");setTimeout(function(){if(!window.__motionReady)r.classList.remove("motion")},2500)}})(document.documentElement)</script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Bỏ qua tới nội dung</a>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html"><img src="assets/img/logo.svg" alt="" width="34" height="34"><span>NHÓM 7</span></a>
+      <nav class="nav" aria-label="Điều hướng chính"><a href="index.html" data-u="light" aria-current="page">Nhóm</a><a href="members.html" data-u="teal">Thành viên</a><a href="docs.html" data-u="coral">Tài liệu</a></nav>
+    </div>
+  </header>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  <div class="curtain" aria-hidden="true"></div>
+
+  <main id="main">
+    <!-- HERO: ảnh nhóm làm nền chính, khung thông tin nền trong suốt -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__media">
+        <!-- [PLACEHOLDER] Thay bằng ảnh nhóm thật, ví dụ assets/img/group.webp (xem README) -->
+        <img src="assets/img/group.svg" alt="Ảnh tập thể Nhóm 7" width="1600" height="900" fetchpriority="high" decoding="async">
+      </div>
+      <div class="container hero__inner">
+        <div class="hero__logo" data-reveal="fade"><img src="assets/img/logo.svg" alt="" width="44" height="44">Dự án nhóm · 2026</div>
+        <h1 class="display hero__title" id="hero-title" data-split>Nhóm 7</h1>
+        <div class="hero__row">
+          <div class="glass hero__info" data-reveal data-delay="0.5">
+            <!-- [PLACEHOLDER] Thông tin nhóm -->
+            <p>Bảy sinh viên, một dự án, và rất nhiều buổi họp tới khuya. Đây là nơi chúng mình kể lại hành trình đó — từ ngày lập nhóm tới sản phẩm cuối cùng.</p>
+            <div class="hero__stats">
+              <div><b>07</b><span>thành viên</span></div>
+              <div><b>01</b><span>sản phẩm</span></div>
+              <div><b>03</b><span>tài liệu</span></div>
+            </div>
+          </div>
+          <div class="scroll-cue" data-reveal="fade" data-delay="0.8" aria-hidden="true"><i></i>Cuộn xuống</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BÀI BÁO: 3 bài kiểu nhật báo cổ, ngay dưới ảnh poster nhóm. Nội dung sửa trong assets/js/data.js (SITE.news) -->
+    <section class="news" id="tin-tuc" aria-labelledby="news-title"><div class="np-sheet" id="news-mount"></div></section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Một nhóm</span><span>Bảy người</span><span>Một hành trình</span><span>Một sản phẩm</span>
+      </div>
+    </div>
+
+    <!-- GIỚI THIỆU -->
+    <section class="section" aria-labelledby="about-title">
+      <div class="container section-head">
+        <span class="eyebrow" id="about-title">Về chúng mình</span>
+        <!-- [PLACEHOLDER] Câu giới thiệu nhóm -->
+        <p class="statement">Chúng mình là bảy người với bảy thế mạnh khác nhau, cùng học cách biến một ý tưởng nhỏ thành một sản phẩm mà cả nhóm tự hào.</p>
+      </div>
+    </section>
+
+    <!-- HÀNH TRÌNH (kéo ngang trên máy tính) -->
+    <section class="journey" aria-labelledby="journey-title">
+      <div class="container journey__head section-head" style="margin-bottom:0">
+        <span class="eyebrow">Hành trình</span>
+        <h2 class="h2" id="journey-title" data-split>Từ ngày đầu <em>tới hôm nay</em></h2>
+        <p class="lead" data-reveal>Câu chuyện của nhóm, kể theo từng chặng.</p>
+      </div>
+      <div class="journey__viewport">
+        <!-- [PLACEHOLDER] Các chặng hành trình: sửa tiêu đề, ngày, nội dung -->
+        <div class="journey__track">
+          <div class="journey__line" aria-hidden="true"><span></span></div>
+          <article class="chapter" style="--c:var(--teal)">
+            <span class="chapter__num">01</span>
+            <span class="chapter__date">Tháng 9 · 2026</span>
+            <h3>Thành lập nhóm</h3>
+            <p>Bảy người lạ ghép lại thành một nhóm. Buổi họp đầu tiên: chọn tên, chia vai, viết biên bản thành lập.</p>
+          </article>
+          <article class="chapter" style="--c:var(--yellow)">
+            <span class="chapter__num">02</span>
+            <span class="chapter__date">Tháng 9 · 2026</span>
+            <h3>Tìm ý tưởng</h3>
+            <p>Hàng chục ý tưởng trên bảng trắng, rồi bình chọn để giữ lại một ý tưởng cả nhóm cùng muốn làm.</p>
+          </article>
+          <article class="chapter" style="--c:var(--coral)">
+            <span class="chapter__num">03</span>
+            <span class="chapter__date">Tháng 10 · 2026</span>
+            <h3>Bắt tay thực hiện</h3>
+            <p>Viết kịch bản, quay, dựng. Có những cảnh phải quay lại năm lần — nhưng mỗi lần lại tốt hơn.</p>
+          </article>
+          <article class="chapter" style="--c:#a78bfa">
+            <span class="chapter__num">04</span>
+            <span class="chapter__date">Tháng 11 · 2026</span>
+            <h3>Hoàn thiện &amp; ra mắt</h3>
+            <p>Chỉnh sửa lần cuối, làm website này, và giới thiệu sản phẩm tới mọi người.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SẢN PHẨM -->
+    <section class="section" id="san-pham" aria-labelledby="products-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Sản phẩm</span>
+          <h2 class="h2" id="products-title" data-split>Sản phẩm <em>của nhóm</em></h2>
+        </div>
+
+        <!-- [PLACEHOLDER] Video duy nhất của nhóm. Khi có file video, thay <img> bằng:
+             <video src="assets/img/products/video.mp4" autoplay muted loop playsinline poster="assets/img/products/video.svg"></video>
+             (MP4/WebM nhẹ hơn GIF ~10 lần). Đổi href sang link YouTube thật. -->
+        <a class="product product--film" href="https://www.youtube.com/" target="_blank" rel="noopener">
+          <div class="product__media"><img src="assets/img/products/video.svg" alt="Video của nhóm" width="1280" height="720" loading="lazy" decoding="async"></div>
+          <h3>Phim của nhóm</h3>
+          <p>Một câu mô tả ngắn về bộ phim.</p>
+        </a>
+        <!-- [PLACEHOLDER] Link YouTube (unlisted) dự phòng khi video không tải được -->
+        <p class="yt-note" data-reveal>Video không tải được? <a href="https://www.youtube.com/" target="_blank" rel="noopener">Xem bản đầy đủ trên YouTube ↗</a></p>
+
+        <!-- [PLACEHOLDER] Nguồn gốc video, quá trình làm -->
+        <div class="story" data-reveal>
+          <div>
+            <span class="eyebrow">Hậu trường</span>
+            <h3 class="h2" style="font-size:clamp(28px,3.4vw,44px);margin-top:12px">Video này ra đời <em>như thế nào?</em></h3>
+          </div>
+          <ol class="story__steps">
+            <li data-stagger><div><b>Ý tưởng</b><span>Video bắt nguồn từ đâu, vì sao nhóm chọn chủ đề này.</span></div></li>
+            <li data-stagger><div><b>Kịch bản &amp; chuẩn bị</b><span>Viết kịch bản, chọn địa điểm, phân công từng người.</span></div></li>
+            <li data-stagger><div><b>Quay</b><span>Những buổi quay, khó khăn gặp phải và cách nhóm vượt qua.</span></div></li>
+            <li data-stagger><div><b>Dựng &amp; hoàn thiện</b><span>Dựng phim, chỉnh màu, âm thanh và xuất bản.</span></div></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="container">
+        <h2 class="h2" data-split>Gặp gỡ <em>bảy thành viên</em></h2>
+        <a class="btn" href="members.html" data-reveal>Xem thành viên <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <h2 class="footer__big" data-split>Liên hệ với <em>Nhóm&nbsp;7</em></h2>
+        <!-- Thông tin liên hệ được lấy từ assets/js/data.js -->
+        <ul class="contact-list" data-contact></ul>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> Nhóm 7</span>
+        <a href="#top">Lên đầu trang ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/vendor/gsap.min.js"></script>
+  <script src="assets/js/vendor/ScrollTrigger.min.js"></script>
+  <script src="assets/js/vendor/SplitText.min.js"></script>
+  <script src="assets/js/vendor/lenis.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
